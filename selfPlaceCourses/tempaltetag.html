@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <template id="myTemplate">
+        <div>
+            <h2>This is Product</h2>
+            <p>It can contain Description of Product data</p>
+        </div>
+    </template>
+</body>
+<script>
+    // Get the template element
+    var template = document.getElementById('myTemplate');
+    var product1 = document.importNode(template.content, true);
+    product1.querySelector('h2').textContent = 'Html';
+    product1.querySelector('p').textContent = 'Hyper Text Markup Language ';
+
+    // display the product in Front End
+    document.body.appendChild(product1);
+</script>
+</html>
