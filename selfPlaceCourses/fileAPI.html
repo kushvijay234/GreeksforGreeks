@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File API</title>
+</head>
+<body>
+    <input type="file" name="" id="file" id="fileInput" onchange="dispalyFileData()" />
+    <div id="output"> </div>    
+</body>
+<script>
+    function dispalyFileData() {
+        var file = document.getElementById("fileInput")
+        console.log(fileInput.files[0])
+        var filedata = fileInput.files[0]
+        var output = document.getElementById("output")
+        outer.innerHTML =
+        "File Name: " + filedata.name + "<br>" +
+        "File Size: " + filedata.size + "<br>" +  
+        "File Type: " + filedata.type 
+    }
+</script>
+</html>
