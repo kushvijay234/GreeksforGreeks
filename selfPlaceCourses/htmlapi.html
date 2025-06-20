@@ -24,11 +24,17 @@
     }
 
     function showPosition(position){
-        console.log(position)
+        const lat = position.coords.latitude;
+        const lon = position.coords.longitude;
+        document.getElementById("location").innerHTML = `Latitude: ${lat}, Longitude: ${lon}`;
+        
+        // You can also use the coordinates to fetch nearby courses or other data
+        // For example, you could call a function to fetch courses based on these coordinates
+        // fetchCourses(lat, lon);
     }
 
     function showError(error) {
-        console.log(error)
+        document.getElementById("location").innerHTML = "Error:" + error.message;
     }
 </script>
 </html>
