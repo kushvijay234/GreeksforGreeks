@@ -4,12 +4,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resume</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            background-color: #baa7a7;
+        }
+        h1 {
+            color: #630606;
+            text-align: center;
+        }
+        .Address {
+            color: #630606;
+        }
+        #skill {
+            color: #b10808;
+        }
+        pre {
+            background-color: #f4f4f4;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        video {
+            display: block;
+            margin: 20px auto;
+            border: 2px solid #630606;
+            border-radius: 10px;
+        }
+        ul {
+            list-style-type: square;
+            padding-left: 20px;
+        }
+        li::marker {
+            color: #b10808;
+        }
+        dl {
+            padding-left: 20px;
+            text-transform: capitalize;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+    </style>
 </head>
 <body>
     <h1>Vijay Kumar Kushwaha</h1>
     <br>
     <hr>
-    <h2>Address:</h2>
+    <h2 class="Address">Address:</h2>
     <pre>
         1234, Street Name,
         City, State, Zip Code
@@ -17,7 +62,7 @@
     </pre>
     <video src="./video123.mp4" width="400px"  controls autoplay loop ></video>
     <hr>
-    <h3>Skill</h3>
+    <h2 id="skill">Skill</h2>
     <ul>
         <li>html</li>
         <li>css</li>
@@ -26,7 +71,7 @@
         <li>php</li>
     </ul>
     <hr>
-    <h3>Skill Knowledge</h3>
+    <h2 class="Address">Skill Knowledge</h2>
     <dl>
         <dt>html</dt>
         <dd>HyperText Markup Language, the standard markup language for documents designed to be displayed in a web browser.</dd>
