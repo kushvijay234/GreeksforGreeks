@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: auto;
+        }
+        h1{
+            color: rgb(0, 0, 255)
+        }
+
+        h1, p{
+            text-align: center;
+        }
+        .one{
+            color: red;
+            font-size: small;
+        }
+
+        #two{
+            color: #008000;
+            font-size: large;
+        }
+
+        /* nth Child */
+
+        p:nth-child(2) {
+            color: green;
+        }
+
+        input [type="text"] {
+            background-color: yellow;
+        }
+
+        input::placeholder {
+            color: orange;
+        }
+        li::marker {
+            color: red;
+        }
+
+        h1::after {
+            content: " - This is a heading";
+        }
+        h1:before {
+            content: "Heading: ";
+            color: blue;
+        }
+        button:hover {
+            background-color: lightblue;
+            color: white;
+        }
+
+        </style>
+</head>
+<body>
+    <h1>this is heading</h1>
+    <!-- p*4{para - $} -->
+    <p>para-1</p>
+    <p>para-2</p>
+    <p>para-3</p>
+    <p>para-4</p>
+
+    <p class="one">This is a paragraph with class one</p>
+    <p id="two">This is a paragraph with id two</p>
+
+    <input type="text" placeholder="Enter your name">
+
+    <ul>
+        <li>one</li>
+        <li>two</li>
+        <li>three</li>
+        <li>Four</li>
+    </ul>
+</body>
+</html>
