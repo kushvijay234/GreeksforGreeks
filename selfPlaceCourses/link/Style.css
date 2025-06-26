@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+nav {
+    
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    padding: 10px;
+    align-items: center;
+}
+nav ul {
+    display: flex;
+    gap: 10px;
+    color: white;
+}
+nav ul li {
+    list-style: none;
+}
+
+.style_link:link{
+    color: rgb(191, 129, 53);
+     text-decoration: underline;
+}
+
+.style_link{
+    color: rgb(191, 129, 53);
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.style_link:visited{
+    color: greenyellow;
+}
+.style_link:hover{
+    color: rebeccapurple;
+    background-color: blanchedalmond;
+    font-size: 12px;
+    padding: 5px;
+    border-radius: 20px;
+}
+
+nav img {
+    width: 50px;
+    height: 50px;
+}
