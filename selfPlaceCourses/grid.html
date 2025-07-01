@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            background-color: #1a111132;
+        }
+        .mainBody {
+            width: 100vw;
+            height: 100vh;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 3fr;
+            grid-gap: 10px;
+            grid-template-areas: 
+            "header header"
+            "sidebar content"
+            "footer footer";
+        
+        }
+        .header {
+            grid-area: header;
+            background-color: #4a4a4a;
+            color: white;
+            padding: 1%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position:sticky;
+            top: 0;
+        }
+        .navbar ul {
+            display: flex;
+            gap: 40px;
+            justify-content: space-around;
+
+        }
+        .navbar ul li {
+            list-style: none;
+            cursor: pointer;
+            font-size: 18px;
+            font-weight: 600;
+            
+        }
+        .navbar ul li:hover {
+            padding: 5px;
+            background-color: #ff9800;
+            
+        }
+        .sidebar {
+            grid-area: sidebar;
+            background-color: #2a2a2a;
+            color: white;
+            padding: 20px;
+           
+        }
+        .content {
+            grid-area: content;
+            background-color: #3a3a3a;
+            color: white;
+            padding: 20px;
+            
+        }
+        .footer {
+            grid-area: footer;
+            background-color: #4a4a4a;
+            color: white;
+            padding: 20px;
+            text-align: center;  
+        }
+
+       
+    </style>
+</head>
+<body>
+    <section class="mainBody">
+        <div class="container">
+            <div class="header">
+                <div class="logo">
+                    <img src="https://media.geeksforgeeks.org/gfg-gg-logo.svg" alt="">
+                </div>
+                <div class="navbar">
+                    <ul>
+                        <li>Home</li>
+                        <li>About Us</li>
+                        <li>Content Us</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="sidebar">Sidebar</div>
+            <div class="content">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim dignissimos nisi veniam atque autem harum omnis maiores est? Eius accusantium deserunt aut voluptatibus soluta neque, reiciendis doloribus dolorum sunt. Reiciendis autem dolores, animi eligendi officia molestiae, amet, culpa rem nobis maiores veniam! Dolorum, placeat? Itaque corrupti maiores eius alias perferendis mollitia praesentium quo assumenda sed cupiditate in harum, labore, fugit accusantium aperiam? Totam asperiores laudantium inventore minima eum harum. Rem suscipit corporis laudantium distinctio reprehenderit et quae ex quidem saepe quaerat nemo quos nobis cupiditate dolorem, harum modi, nam sapiente dolorum aut voluptatibus. Commodi odio, blanditiis vero tempore perspiciatis suscipit!</p>
+            </div>
+            <div class="footer">Footer</div>
+        </div>
+    </section>
+</body>
+</html>
