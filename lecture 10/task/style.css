@@ -56,4 +56,24 @@ footer{
     justify-content: center;    
     align-items: center;
 }
+@media (min-width: 321px) and (max-width: 768px) {
+    .container {
+    grid-template-areas: 
+        "header"
+        "sidebar"
+        "content"
+        "footer";
+    grid-template-rows: 50px 50px auto 50px;    
+  }   
+}
 
+@media (max-width: 320px) {
+  .container {
+    grid-template-areas: 
+        "header "
+        "sidebar"
+        "content"
+        "footer";
+    grid-template-rows: 50px 50px auto 50px;    
+  }   
+}

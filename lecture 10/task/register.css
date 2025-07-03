@@ -123,3 +123,9 @@ input[type="radio"]
        transform: scale(1.5); /* Adjust the scale factor as needed */
        margin: 5px; /* Add some margin for spacing */
  }
+
+ @media (min-width: 320px) {
+    .main-container { 
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
