@@ -7,8 +7,7 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     background-color: #f0f0f0;
 }
-.container {
-    width: 100vw;
+.main-container {
     height: 100vh;
     display: grid;
     grid-template-areas: 
@@ -53,36 +52,36 @@ footer{
     justify-content: center;    
     align-items: center;
 }
-
-
-main {
-    grid-area: content;
-    background-color: #fff;
+.card   {
+    width: 50vw;
     display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.loginbox {
-    width: 45%;
-    height: 70%;
-    border: 2px solid #00000021;
-    box-shadow: -2px 2px 13px 0px;
+    justify-content: flex-start;
+    flex-direction: column;
+    box-shadow: 0 0 10px #e2e2e2;
+    border-radius: 8px;
     background-color: #e2e2e2;
+    margin: 4% 0%;
 }
-
-.loginform {
+.card-header {
     width: 100%;
-    height: 100%;
-    padding: 7%;
-}
-
-.loginbox h2 {
     text-align: center;
+    font-size: 24px;
     margin-bottom: 20px;
+    padding: 3% 0%;
+    background-color: rgb(8, 8, 46);
+    border-radius: 0% 0% 0% 0%;
+}
+.card-header h2 {
+    color: white;
+    font-weight: 600;
+    font-size: 18px;
 }
 
-.loginform input {
+.card-body {
+    padding: 3%;
+}
+
+.card-body input {
     width: 100%;
     padding: 10px;
     margin: 10px 0;
@@ -90,42 +89,37 @@ main {
     border-radius: 5px;
     font-size: 18px;
 }
-
-.loginform input[type="checkbox"] {
-    width: 10%;
-}
-
-.btn {
-    width: 100%;
-    padding: 10px;
-    background-color: rgb(8, 8, 46);
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 18px;
-}
-.btn:hover {
-    background-color: #555;
-}
-.register {
-    text-align: center;
-    margin-top: 20px;
-}
-
-.checkForget {
+.Gender {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    margin-bottom: 2%;
+    margin-bottom: 20px;
 }
 
-.forgot-password a {
-    text-decoration: none;
+#Male {
+    width: 10px;
+    margin-left: 4%;
+}
+#Female {
+    width: 10px; 
+    margin-left: 2%;   
+}
+.checkbox {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.checkbox input {
+    width: 10px;
+    margin-right: 10px;
 }
 
-.register a {
-    text-decoration: none;
-}
-
-
+input[type="checkbox"]
+ {
+       width: 16px;
+       height: 16px;
+ }
+input[type="radio"]
+ {
+       transform: scale(1.5); /* Adjust the scale factor as needed */
+       margin: 5px; /* Add some margin for spacing */
+ }
