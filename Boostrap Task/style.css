@@ -8,6 +8,15 @@ body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
 }
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
 .navbar-light .navbar-toggler-icon {   
     background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3E%3Cpath stroke='%23fff' stroke-width='2' stroke-linecap='round' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
@@ -17,4 +26,13 @@ body {
 }
 .card-img-top {
     height: 200px !important;
+}
+.coursebtn{
+        width: 30%;
+    }
+
+@media(max-width: 375px) {
+    .coursebtn{
+        width: 100%;
+    }
 }
