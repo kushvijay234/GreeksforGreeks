@@ -31,8 +31,11 @@ body {
         width: 30%;
     }
 
+
 @media(max-width: 375px) {
     .coursebtn{
         width: 100%;
     }
+    
+
 }
