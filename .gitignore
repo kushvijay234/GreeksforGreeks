@@ -1,2 +1,6 @@
 stripeKey.txt
 # Ignore the Stripe key file
+
+node_modules
+package.json
+package-lock.json
